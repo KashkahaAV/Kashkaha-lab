@@ -1,20 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello from branch 1!");
-        System.out.println("Goodbye from branch 1!");
+        System.out.println("Hello from main branch!");
         
-        // Используем новый калькулятор
-        Calculator calc = new Calculator();
-        int sum = calc.add(10, 5);
-        calc.showResult(sum);
+        // Используем утилиты
+        int[] numbers = {5, 2, 8, 1, 9};
+        System.out.println("Array:");
+        Utils.printArray(numbers);
+        System.out.println("Max value: " + Utils.findMax(numbers));
     }
     
     public static void printMessage(String message) {
-        System.out.println("Message from branch 1: " + message);
-    }
-    
-    // Новый метод в ветке 1
-    public static void branchFeature() {
-        System.out.println("Это новая функция в ветке 1");
+        System.out.println("Main branch message: " + message);
     }
 }
